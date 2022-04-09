@@ -2,7 +2,7 @@
 
 This powerful small library allows you to intercept all **ProcessEvent** calls on any game object therefore you could capture and modify 90% of game function calls, one example is you could intercept a function that creates a projectile and modify it's direction to achieve "silent" aim.
 
-The hooking method used is **VMT shadowing** therefore the hook must be applied on every indvidual object that you're targeting in order to intercept the **ProcessEvent** calls. This method does not require any patching that could be integrity checked against.
+The hooking method used is **VMT shadowing** therefore the hook must be applied on every indvidual object that you're targeting in order to intercept the **ProcessEvent** calls and the hook must be reapplied everytime the object gets destroyed and changes (this is already implemented into this library). This method does not require any patching that could be integrity checked against therefore it's safe to use on any anti-cheat the game may have.
 
 I have included an example/usage code based on Ark Survival Evolved.
 
