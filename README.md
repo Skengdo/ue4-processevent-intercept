@@ -1,6 +1,6 @@
 # ue4-processevent-intercept
 
-This powerful library allows you to intercept all **ProcessEvent** calls on any game object therefore you could capture and modify 90% of game function calls, one example is you could intercept a function that creates a projectile and modify it's direction to achieve "silent" aim.
+This powerful small library allows you to intercept all **ProcessEvent** calls on any game object therefore you could capture and modify 90% of game function calls, one example is you could intercept a function that creates a projectile and modify it's direction to achieve "silent" aim.
 
 The hooking method used is **VMT shadowing** therefore the hook must be applied on every indvidual object in order to intercept the **ProcessEvent** calls
 
