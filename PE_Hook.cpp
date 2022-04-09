@@ -11,7 +11,7 @@ int VTable::GetVTableSize()
 
 	MEMORY_BASIC_INFORMATION mbi;
 
-	while (auto function = VirtualQuery(reinterpret_cast<LPVOID>(this->m_vtable[count]), &mbi, sizeof(mbi)))
+	while (VirtualQuery(reinterpret_cast<LPVOID>(this->m_vtable[count]), &mbi, sizeof(mbi)))
 	{
 #define PAGE_TEXT (PAGE_EXECUTE | PAGE_EXECUTE_READ)
 
