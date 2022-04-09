@@ -24,7 +24,7 @@ int VTable::GetVTableSize()
 		count++;
 	}
 
-	return -1;
+	return count;
 }
 
 void VTable::FreeVTableCache()
